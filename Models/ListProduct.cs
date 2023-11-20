@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 
-
 namespace CristacheAnaLab7.Models
 {
-    public class ShopList
+    public class ListProduct
+
     {
         [PrimaryKey, AutoIncrement]
-
         public int ID { get; set; }
-        [MaxLength(250), Unique]
-        public string Description { get; set; }
-        public DateTime Date { get; set; }
+        [ForeignKey(typeof(ShopList))]
+        public int ShopListID { get; set; }
+        public int ProductID { get; set; }
     }
 }
