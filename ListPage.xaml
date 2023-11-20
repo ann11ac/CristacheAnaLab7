@@ -33,6 +33,8 @@
                 </ListView.ItemTemplate>
             </ListView>
             <Button Text="Add/Choose Item to buy" MaximumWidthRequest="300" Clicked="OnChooseButtonClicked"/>
+            <!-- Adăugați noul buton "Delete Item" și atribuiți evenimentul Clicked -->
+            <Button Text="Delete Item" Clicked="OnDeleteItemClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
